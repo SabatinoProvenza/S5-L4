@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #f5f5f5;
+}
+
+/* Post-it base */
+main div {
+  flex: 1 1 calc(25% - 15px);
+  max-width: calc(25% - 15px);
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 1s ease;
+}
+
+/* Effetto hover */
+main div:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+/* Colori */
+.yellow {
+  background-color: #fff475;
+  transform: rotate(-4deg);
+}
+
+.green {
+  background-color: #a8f0a2;
+  transform: rotate(4deg);
+}
+
+.violet {
+  background-color: #d3aefb;
+  transform: rotate(-4deg);
+}
